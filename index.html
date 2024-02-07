@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="keywords" content="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer Over</title>
+    <link rel="shortcut icon" href="images/logo-sm.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css".css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body  class="bg-dark">
+    <header class="position-relative">
+        <div class="laayer position-absolute top-0 end-0 start-0 bottom-0 bg-black bg-opacity-25"></div>
+    </header>
+    <div class="position-sticky tttt z-3 "> 
+        <nav class="navbar navbar-expand-lg bg-body-tertiary w-75 mx-auto ">
+            <div class="container">
+                <a class="navbar-brand ps-2 nerko text-white fs-3 d-flex align-items-center" href="#"><div class="logo me-2"></div><div class="py-0">Game over Zone</div></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto" id="switchCategory">
+                        <a class="nav-link text-white text-uppercase comfortaa nav-hover px-2 active" aria-current="page" href="#">mmorpg</a>
+                        <a class="nav-link text-white text-uppercase comfortaa nav-hover px-2" href="#">shooter</a>
+                        <a class="nav-link text-white text-uppercase comfortaa nav-hover px-2" href="#">sailing</a>
+                        <a class="nav-link text-white text-uppercase comfortaa nav-hover px-2" href="#">permadeath</a>
+                        <a class="nav-link text-white text-uppercase comfortaa nav-hover px-2" href="#">superhero</a>
+                        <a class="nav-link text-white text-uppercase comfortaa nav-hover px-2" href="#">pixel</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <main class="container">
+        <section >
+            <div class="row g-3 " id="display">
+            </div>
+            <div class="d-none z-3  justify-content-center align-items-center bg-black bg-opacity-25 position-fixed top-0 bottom-0 end-0 start-0">
+            <span class="loader"></span>
+            </div>
+        </section>
+        <section id="description" class="d-none position-absolute top-0 end-0 bottom-0 start-0 z-3  bg-dark d-flex justify-content-center">
+            <div class="container py-4">
+                <div class="d-flex justify-content-between">
+                    <p class="text-white fs-3 ">Details Game</p>
+                    <button id="backToHome" class="btn text-secondary fs-4 "><i class="fa-solid fa-x"></i></button>
+                </div>
+                <div class="row mt-1">
+                    <div class="col-lg-4">
+                        <img id="gameImage"  class="w-100" alt="">
+                    </div>
+                    <div class="col-lg-8">
+                        <div><p class="text-white fs-1">Title: <span id="title" class="ms-1 nerko"></span></p></div>
+                        <div><p class="text-white fs-5">category: <span id="genre" class="bg-info rounded-3 fs-6 ms-2 p-1 text-black comfortaa"></span></p></div>
+                        <div><p class="text-white fs-5">Platform: <span id="platform" class="bg-info rounded-3 fs-6 ms-2 p-1 text-black comfortaa"></span></p></div>
+                        <div><p class="text-white fs-5">Status: <span id="status" class="bg-info rounded-3 fs-6 ms-2 p-1 text-black comfortaa"></span></p></div>
+                        <p id="descrip" class="text-white py-2 comfortaa"></p>
+                        <button class="btn btn-outline-warning text-white"><a class="text-decoration-none text-white" target="_blank" id="gameLink">Show Game</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="module" src="js/index.js"></script>
+</body>
+</html>

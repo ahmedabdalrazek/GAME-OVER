@@ -1,0 +1,83 @@
+:root{
+    --nerko-family: 'Nerko One', cursive;
+    --comfortaa-family: 'Comfortaa', sans-serif;
+}
+header{
+    background: url(../images/bg.avif) center no-repeat ;
+    background-size: cover;
+    padding: 100px 0;
+}
+.tttt{
+    transform: translateY(-30px);
+    top: 30px;
+}
+.nerko{
+    font-family: var(--nerko-family);
+}
+.comfortaa{
+    font-family: var(--nerko-family);
+    font-weight: 400;
+    font-size: 1rem;
+}
+.navbar{
+    background-color:#3A497B !important; 
+    border-radius: 30px;
+}
+.logo{
+    height: 40px;
+    width: 40px;
+    background: url(../images/logo-sm.png) center center;
+    background-size: cover;
+}
+.active , .nav-hover:hover{
+    transition: all 0.5s linear;
+    color: #0082C6 !important;
+    font-weight: 100 !important;
+}
+.card{
+    border: #0d0d0d5a solid 2px;
+    cursor: pointer;
+    filter: grayscale(80%);
+    transition: transform 0.3s , filter 0.3s;
+} .card:hover{
+    transform: scale(1.06);
+    filter: grayscale(0%);
+}
+.badge{
+    padding:0.3rem 0.6rem;
+    font-size: 0.75rem;
+}
+.max-width{
+    min-height: 50px;
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    z-index: 9999 !important;
+}
+.loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border-bottom: 4px solid #FF3D00;
+    border-left: 4px solid transparent;
+}
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 
